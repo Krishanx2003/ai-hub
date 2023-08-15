@@ -12,13 +12,10 @@ const Mentor = () => {
     return (
         <main>
             <Navbar />
-           <Mentors />
-              
-<Aboutus />
-        <Events />
-        <Beliefs />
-       
-    
+            <Mentors />
+            <Aboutus />
+            <Events />
+            <Beliefs />
             <Footer />
             </main>
     );

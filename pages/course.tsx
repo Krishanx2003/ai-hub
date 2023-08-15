@@ -11,8 +11,8 @@ const Course = () => {
             <Navbar />
             <div style={{ padding: '70px' }}>
                 <Courses />
-        <Events />
-      </div>
+                <Events />
+            </div>
             <Footer />
         </div>
     );
