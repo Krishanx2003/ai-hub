@@ -10,10 +10,9 @@ interface NavigationItem {
 
 const navigation: NavigationItem[] = [
   { name: 'Home', href: '/', current: true },
-  { name: 'Courses', href: '#courses-section', current: false },
-  { name: 'Mentors', href: '#mentors-section', current: false },
-  { name: 'Testimonial', href: '#testimonial-section', current: false },
-  { name: 'Join', href: '#join-section', current: false },
+  { name: 'Course', href: '/course', current: false }, // Updated the current property to false
+  { name: 'Mentors', href: '/mentor', current: false },
+  { name: 'Resourses', href: 'resource', current: false },   
 ]
 
 function classNames(...classes: string[]) {

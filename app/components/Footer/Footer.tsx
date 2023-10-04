@@ -11,7 +11,7 @@ const products: ProductType[] = [
     {
         id: 1,
         section: "Menu",
-        link: ['Home', 'Course', 'Mentors', 'Resourses'],
+        link: ['Home', 'Course', 'Mentor', 'Resourses'],
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const products: ProductType[] = [
     {
         id: 3,
         section: "Pages",
-        link: ['Community', 'Upcoming', 'Blogs']
+        link: ['Community', 'Upcoming', 'Blogs', 'Career']
     },
     {
         id: 4,
@@ -32,7 +32,7 @@ const products: ProductType[] = [
 
 const footer = () => {
     return (
-        <div className="bg-purple -mt-64" id="first-section">
+        <div className="bg-custom-color -mt-64" id="first-section">
             <div className="mx-auto max-w-2xl pt-64 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
                 <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
@@ -52,17 +52,20 @@ const footer = () => {
                     {/* CLOUMN-2/3 */}
 
                     {products.map((product) => (
-                        <div key={product.id} className="group relative col-span-2">
-                            <p className="text-green-500 text-xl font-semibold mb-9">{product.section}</p>
-                            <ul>
-                                {product.link.map((link: string, index: number) => (
-                                    <li key={index} className='mb-5'>
-                                        <Link href="/" className="text-green-300 text-base font-normal mb-6 space-links">{link}</Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
+    <div key={product.id} className="group relative col-span-2">
+        <p className="text-green-500 text-xl font-semibold mb-9">{product.section}</p>
+        <ul>
+            {product.link.map((link: string, index: number) => (
+                <li key={index} className='mb-5'>
+                    {/* Update the href for each link based on your page/component structure */}
+                    <Link href={`/${link.toLowerCase()}`} className="text-green-300 text-base font-normal mb-6 space-links">
+                        {link}
+                    </Link>
+                </li>
+            ))}
+        </ul>
+    </div>
+))}
 
                     {/* CLOUMN-4 */}
 

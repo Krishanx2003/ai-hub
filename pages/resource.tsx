@@ -8,7 +8,7 @@ import Aboutus from '@/app/components/Aboutus';
 import Beliefs from '@/app/components/Beliefs';
 import Teacher from '../app/components/Teacher/Teacher'
 import Teachers from '../app/components/Teachers/Teachers'
-const Resource = () => {
+const Resourses = () => {
  
     return (
         <div>
@@ -30,4 +30,4 @@ const Resource = () => {
 };
 
 
-export default Resource
+export default Resourses;

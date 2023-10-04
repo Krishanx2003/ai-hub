@@ -27,9 +27,9 @@ html:not([data-scroll="0"]) .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: white !important;
+  background-color: #e4ebf5 !important;
   opacity: 1.9;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 15px 30px rgba(53, 45, 45, 0.12);
   transition: 0.4s linear;
   padding-top: 1px;
   padding-bottom: 1px;
@@ -45,7 +45,7 @@ html:not([data-scroll="0"]) .navbar {
 @media screen and (max-width: 640px) {
   .banner-image {
     background-image: none !important;
-    background-color: #544a42;
+    background-color: #7b4ab4;
   }
 }
 
@@ -201,4 +201,8 @@ html:not([data-scroll="0"]) .navbar {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: unset;
+}
+
+.bg-custom-color {
+  background-color: #4a5c96; /* Desired background color */
 }
